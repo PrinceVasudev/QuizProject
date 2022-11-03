@@ -28,7 +28,7 @@ html {
   box-shadow: 0 1rem 1rem -0.7rem #bccef8;
 }
 
-.inner-div h2 {
+h2 {
   font-size: 3.5rem;
   font-weight: 400;
   margin-top: 1rem;
@@ -45,8 +45,7 @@ input {
   cursor: pointer;
 }
 
-#submit,
-.btn {
+#submit {
   padding: 1rem 3rem;
   outline: none;
   font-size: 2rem;
@@ -63,7 +62,34 @@ input {
 #submit:hover {
   background-color: #bccef8;
 }
-#showScore {
+
+#js{
+  width: 40vw;
+  background-color: #faf7f0;
+  padding: 3rem 8rem;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 1rem -0.7rem #bccef8;
+}
+
+#reload{
+  padding: 1rem 3rem;
+  outline: none;
+  font-size: 2rem;
+  font-size: 400;
+  display: block;
+  margin: auto;
+  border: none;
+  text-transform: uppercase;
+  background-color: #91C788;
+  color: #faf7f0;
+  margin-top: 4rem;
+}
+
+#reload:hover{
+  background-color: #DDFFBC;
+}
+
+/* #showScore {
     background-color: #EEEEEE;
     margin-top: 3rem;
     padding: 3rem 4rem;
@@ -72,4 +98,4 @@ input {
 
 .scoreArea{
     display: none;
-}
+} */
