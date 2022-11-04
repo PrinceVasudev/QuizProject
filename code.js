@@ -35,10 +35,10 @@ const quizData = [
 const quiz= document.getElementById('quiz')
 const answerEls = document.querySelectorAll('.answer')
 const questionEl = document.getElementById('question')
-const a_text = document.getElementById('option1')
-const b_text = document.getElementById('option2')
-const c_text = document.getElementById('option3')
-const d_text = document.getElementById('option4')
+const a_text = document.getElementById('a_text')
+const b_text = document.getElementById('b_text')
+const c_text = document.getElementById('c_text')
+const d_text = document.getElementById('d_text')
 const submitBtn = document.getElementById('submit')
 let currentQuiz = 0
 let score = 0
@@ -47,10 +47,10 @@ function loadQuiz() {
     deselectAnswers()
     const currentQuizData = quizData[currentQuiz]
     questionEl.innerText = currentQuizData.question
-    option1.innerText = currentQuizData.a
-    option2.innerText = currentQuizData.b
-    option3.innerText = currentQuizData.c
-    option4.innerText = currentQuizData.d
+    a_text.innerText = currentQuizData.a
+    b_text.innerText = currentQuizData.b
+    c_text.innerText = currentQuizData.c
+    d_text.innerText = currentQuizData.d
 }
 function deselectAnswers() {
     answerEls.forEach(answerEl => answerEl.checked = false)
@@ -75,9 +75,8 @@ submitBtn.addEventListener('click', () => {
            loadQuiz()
        } else {
            quiz.innerHTML = `
-           <div id="js"> <h2 >You answered ${score}/${quizData.length} questions correctly</h2>
-           <button id="reload" onclick="location.reload()">Reload</button>
-           </div>
+           <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+           <button onclick="location.reload()">Reload</button>
            `
        }
     }

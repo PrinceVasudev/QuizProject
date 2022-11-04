@@ -1,101 +1,59 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@400;900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
   box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
 }
-
-html {
-  font-size: 62.5%;
+body{
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7f7 100%);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
 }
-
-.main-div {
-  width: 100vw;
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  background-color: #cdfcf6;
+.quiz-container{
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+  width: 600px;
+  overflow: hidden;
 }
-
-.inner-div {
-  width: 40vw;
-  background-color: #faf7f0;
-  padding: 3rem 8rem;
-  border-radius: 1rem;
-  box-shadow: 0 1rem 1rem -0.7rem #bccef8;
+.quiz-header{
+  padding: 4rem;
 }
-
-h2 {
-  font-size: 3.5rem;
-  font-weight: 400;
-  margin-top: 1rem;
-  margin: 1rem 0 4rem 0;
+h2{
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
 }
-
-.inner-div li {
-  font-size: 2rem;
-  margin-top: 1.5rem;
-  list-style: none;
+ul{
+  list-style-type: none;
+  padding: 0;
 }
-
-input {
+ul li{
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+ul li label{
   cursor: pointer;
 }
-
-#submit {
-  padding: 1rem 3rem;
-  outline: none;
-  font-size: 2rem;
-  font-size: 400;
-  display: block;
-  margin: auto;
+button{
+  background-color: #03cae4;
+  color: #fff;
   border: none;
-  text-transform: uppercase;
-  background-color: #98a8f8;
-  color: #faf7f0;
-  margin-top: 4rem;
-}
-
-#submit:hover {
-  background-color: #bccef8;
-}
-
-#js{
-  width: 40vw;
-  background-color: #faf7f0;
-  padding: 3rem 8rem;
-  border-radius: 1rem;
-  box-shadow: 0 1rem 1rem -0.7rem #bccef8;
-}
-
-#reload{
-  padding: 1rem 3rem;
-  outline: none;
-  font-size: 2rem;
-  font-size: 400;
   display: block;
-  margin: auto;
-  border: none;
-  text-transform: uppercase;
-  background-color: #91C788;
-  color: #faf7f0;
-  margin-top: 4rem;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: inherit;
+  padding: 1.3rem;
 }
-
-#reload:hover{
-  background-color: #DDFFBC;
+button:hover{
+  background-color: #04adc4;
 }
-
-/* #showScore {
-    background-color: #EEEEEE;
-    margin-top: 3rem;
-    padding: 3rem 4rem;
-    box-shadow: 0 1rem 1rem -0.7rem #bccef8;
+button:focus{
+  outline: none;
+  background-color: #44b927;
 }
-
-.scoreArea{
-    display: none;
-} */
