@@ -1,0 +1,91 @@
+body{
+    background-color: #cdfcf6;
+}
+
+#heading{
+    text-align: center;
+    color: #222831;
+    font-family: 'Arial',sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    margin: 8rem 0 0 0;
+}
+
+
+#button-main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    margin: auto;
+    width: 70vw;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.common{
+    /* background-color: #fff000; */
+  border-radius: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5rem 7.5rem;
+  text-align: center;
+  transition: 200ms;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2rem;
+  border-style: none;
+  font-size: 2rem;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.common:not(:disabled):hover,
+.common:not(:disabled):focus {
+  outline: 0;
+  /* background: #f4e603; */
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+}
+
+.common:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}
+
+.button-div{
+    border: 2rem;
+    border-style: none;
+}
+
+#q1{
+   background-color: #F80;
+}
+
+#q1:not(:disabled):hover,
+#q1:not(:disabled):focus {
+    background: #fa5;
+}
+
+#q2{
+    background-color: #08F;
+ }
+ 
+ #q2:not(:disabled):hover,
+ #q2:not(:disabled):focus {
+     background: #5af;
+ }
+ 
+ #q3{
+    background-color: #ff0;
+    color: black;
+ }
+ 
+ #q3:not(:disabled):hover,
+ #q3:not(:disabled):focus {
+     background: #ff5;
+ }

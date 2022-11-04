@@ -1,36 +1,45 @@
 const quizData = [
     {
-        question: "Which language runs in a web browser?",
-        a: "Java",
-        b: "C",
-        c: "Python",
-        d: "javascript",
+        question: "Which type of JavaScript language is ___",
+        a: "Object-Oriented",
+        b: "Object-Based",
+        c: "Assembly-language",
+        d: "High-level",
+        correct: "b",
+    },
+    {
+        question: " Which one of the following also known as Conditional Expression:",
+        a: "Alternative to if-else",
+        b: "Switch statement",
+        c: "If-then-else statement",
+        d: "immediate if",
         correct: "d",
     },
     {
-        question: "What does CSS stand for?",
-        a: "Central Style Sheets",
-        b: "Cascading Style Sheets",
-        c: "Cascading Simple Sheets",
-        d: "Cars SUVs Sailboats",
+        question: " The function and var are known as:",
+        a: "Keywords",
+        b: "Data types",
+        c: "Declaration statements",
+        d: "Prototypes",
+        correct: "c",
+    },
+    {
+        question: "Which of the following variables takes precedence over the others if the names are the same?",
+        a: "Global variable",
+        b: "The local element",
+        c: "The two of the above",
+        d: "None of the above",
         correct: "b",
     },
     {
-        question: "What does HTML stand for?",
-        a: "Hypertext Markup Language",
-        b: "Hypertext Markdown Language",
-        c: "Hyperloop Machine Language",
-        d: "Helicopters Terminals Motorboats Lamborginis",
-        correct: "a",
-    },
-    {
-        question: "What year was JavaScript launched?",
-        a: "1996",
-        b: "1995",
-        c: "1994",
-        d: "none of the above",
-        correct: "b",
-    },
+        question: "In JavaScript, what will be used for calling the function definition expression:",
+        a: "Function prototype",
+        b: "Function literal",
+        c: "Function calling",
+        d: "Function declaration",
+        correct: "b" 
+
+    }
 ];
 const quiz= document.getElementById('quiz')
 const answerEls = document.querySelectorAll('.answer')
